@@ -10,8 +10,8 @@ The CPU executes programs from ROM and controls the accelerator using ordinary l
 
 | Result | Measurement |
 | --- | --- |
-| Example end-to-end acceleration | **7.698Ãƒâ€”**, 816 software cycles vs. 106 accelerator-program cycles |
-| Paired benchmark verification | 73 vector pairs Ãƒâ€” 3 memory latencies = 219 comparisons / 438 program executions |
+| Example end-to-end acceleration | **7.698×**, 816 software cycles vs. 106 accelerator-program cycles |
+| Paired benchmark verification | 73 vector pairs × 3 memory latencies = 219 comparisons / 438 program executions |
 | Routed FPGA resources | 1,791 LUTs, 1,502 flip-flops; 0 DSPs and 0 block RAMs |
 | Routed timing at 50 MHz | Setup slack **+2.244 ns**, hold slack **+0.142 ns** |
 | Final implementation DRC | 0 violations |
@@ -44,9 +44,9 @@ flowchart TD
 The main CPU/accelerator top is [`soc_top`](rtl/soc_top.sv). The physical FPGA top is [`boolean_board_top`](rtl/boolean_board_top.sv), which adds clock generation, reset synchronization and result/status LEDs.
 
 - **CPU:** 32-bit multicycle execution, 32 registers with hardwired-zero `x0`, separate instruction ROM and data RAM.
-- **Controller:** fetch Ã¢â€ â€™ decode Ã¢â€ â€™ execute; memory instructions add request/wait and, for loads, writeback states. This CPU is not pipelined.
+- **Controller:** fetch → decode → execute; memory instructions add request/wait and, for loads, writeback states. This CPU is not pipelined.
 - **Data interface:** one outstanding request, configurable response latency, and stable held responses. Stalls do not repeat stores or accelerator starts.
-- **Accelerator:** four signed 8Ãƒâ€”8-bit products, widened addition and a 32-bit result. Accessed through ordinary `LW`/`SW`; no custom opcode.
+- **Accelerator:** four signed 8×8-bit products, widened addition and a 32-bit result. Accessed through ordinary `LW`/`SW`; no custom opcode.
 - **Verification:** completion traces, independent Python instruction predictions, self-checking tests and cycle/retirement/memory-wait counters. Performance counters are instantiated beside the CPU in testbenches.
 
 See [architecture and module map](docs/ARCHITECTURE.md) for interfaces and sequencing.
@@ -67,7 +67,7 @@ This is an **RV32I-based educational implementation**, without a claim of full I
 
 | Data address / offset | Purpose |
 | --- | --- |
-| `0x00000000Ã¢â‚¬â€œ0x0000003F` | 64-byte, little-endian data RAM |
+| `0x00000000–0x0000003F` | 64-byte, little-endian data RAM |
 | `0x10000000 + 0x00` | Operand A: packed four signed bytes |
 | `0x10000000 + 0x04` | Operand B: packed four signed bytes |
 | `0x10000000 + 0x08` | CONTROL: write bit 0 = 1 to start; other bits must be zero |
@@ -136,7 +136,7 @@ When a board is available, SW0 resets/restarts the demo. Expected completed LED 
 
 ```text
 rtl/           Current CPU, RAM interface, accelerator and board wrapper
-tb/           Comprehensive self-checking tests and trace capture helper
+tb/            Comprehensive self-checking tests and trace capture helper
 programs/      Assembly examples and machine-code ROM images
 verification/  Python reference model, program generators and expected vectors
 constraints/   Board pin and clock constraints
