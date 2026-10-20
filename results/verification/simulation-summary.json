@@ -1,0 +1,181 @@
+{
+  "generated_utc": "2026-10-20T20:44:49.485050+00:00",
+  "suite": "full",
+  "tests": [
+    {
+      "top": "tb_address_decoder",
+      "status": "PASS",
+      "messages": [
+        "PASS: 6810 address-decoder checks; 1362 cases, all mapped bytes, boundaries, aliases and inactive requests"
+      ]
+    },
+    {
+      "top": "tb_alu",
+      "status": "PASS",
+      "messages": [
+        "PASS: 47 ALU checks"
+      ]
+    },
+    {
+      "top": "tb_boolean_board",
+      "status": "PASS",
+      "messages": [
+        "PASS: 354 Boolean-board checks; real MMCM 100-to-50 MHz, result/status LEDs and reset/restart"
+      ]
+    },
+    {
+      "top": "tb_branch_unit",
+      "status": "PASS",
+      "messages": [
+        "PASS: 12597 branch checks; offsets, comparisons, targets and alignment"
+      ]
+    },
+    {
+      "top": "tb_decoder",
+      "status": "PASS",
+      "messages": [
+        "PASS: 33945 decoder checks"
+      ]
+    },
+    {
+      "top": "tb_dotproduct_accelerator",
+      "status": "PASS",
+      "messages": [
+        "PASS: 70496 integrated accelerator checks; 1036 real calculations, register protection, command timing and reset in all phases"
+      ]
+    },
+    {
+      "top": "tb_dotproduct_benchmark",
+      "status": "PASS",
+      "messages": [
+        "PASS: 404067 dot-product benchmark checks; 73 vector pairs at latency 1/2/4, both execution traces, final state and measured cycles"
+      ]
+    },
+    {
+      "top": "tb_dotproduct_engine",
+      "status": "PASS",
+      "messages": [
+        "PASS: 599227 dot-product engine checks; 66579 jobs, all 65536 byte pairs, mixed lanes, extrema, busy-start and reset"
+      ]
+    },
+    {
+      "top": "tb_dotproduct_regs",
+      "status": "PASS",
+      "messages": [
+        "PASS: 16489 dot-product register checks; all offsets/widths/directions, idle/busy, faults, completion and reset"
+      ]
+    },
+    {
+      "top": "tb_imm_gen_i",
+      "status": "PASS",
+      "messages": [
+        "PASS: 4096 I-immediate checks"
+      ]
+    },
+    {
+      "top": "tb_instruction_fetch",
+      "status": "PASS",
+      "messages": [
+        "PASS: 97 instruction-fetch checks"
+      ]
+    },
+    {
+      "top": "tb_instruction_reg",
+      "status": "PASS",
+      "messages": [
+        "PASS: 274 instruction-register checks"
+      ]
+    },
+    {
+      "top": "tb_jump_unit",
+      "status": "PASS",
+      "messages": [
+        "PASS: 25809 jump checks; JAL/JALR offsets, targets, link and alignment"
+      ]
+    },
+    {
+      "top": "tb_load_store_decode",
+      "status": "PASS",
+      "messages": [
+        "PASS: 102534 load/store decode and address checks"
+      ]
+    },
+    {
+      "top": "tb_memory_access",
+      "status": "PASS",
+      "messages": [
+        "PASS: 31457 subword-memory checks; byte preservation, masks, loads and faults"
+      ]
+    },
+    {
+      "top": "tb_memory_controller",
+      "status": "PASS",
+      "messages": [
+        "PASS: 15421 memory-controller checks; all 1792 state/status combinations and reset"
+      ]
+    },
+    {
+      "top": "tb_memory_lane_unit",
+      "status": "PASS",
+      "messages": [
+        "PASS: 9328 memory-lane checks; byte/halfword extension, masks and alignment"
+      ]
+    },
+    {
+      "top": "tb_pc",
+      "status": "PASS",
+      "messages": [
+        "PASS: 2015 PC checks"
+      ]
+    },
+    {
+      "top": "tb_regfile",
+      "status": "PASS",
+      "messages": [
+        "PASS: 204 register-file checks"
+      ]
+    },
+    {
+      "top": "tb_shift_imm",
+      "status": "PASS",
+      "messages": [
+        "PASS: 576 immediate-shift integration checks"
+      ]
+    },
+    {
+      "top": "tb_soc_demo_wrapper",
+      "status": "PASS",
+      "messages": [
+        "PASS: 1250 demo-wrapper checks; success, full-width mismatch, fault, reset synchronization and restart"
+      ]
+    },
+    {
+      "top": "tb_soc_memory_port",
+      "status": "PASS",
+      "messages": [
+        "PASS: 42577 SoC memory-router checks; RAM/accelerator routing, latency 1/2/4, held responses, faults and reset"
+      ]
+    },
+    {
+      "top": "tb_soc_top",
+      "status": "PASS",
+      "messages": [
+        "PASS: 33242 CPU/SoC checks; 12 accelerator programs, 18 MMIO fault cases, latency 1/2/4 and reset/restart"
+      ]
+    },
+    {
+      "top": "tb_software_multiply",
+      "status": "PASS",
+      "messages": [
+        "PASS: 681006 software-multiply checks; 583 input pairs at latency 1/2/4, independent Python traces, signed results and cycle counts"
+      ]
+    },
+    {
+      "top": "tb_upper_imm_unit",
+      "status": "PASS",
+      "messages": [
+        "PASS: 6622 upper-immediate checks; LUI/AUIPC, destinations and wraparound"
+      ]
+    }
+  ]
+}
