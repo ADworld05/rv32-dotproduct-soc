@@ -37,8 +37,8 @@ All 25 self-checking tops passed. The machine-readable [summary](simulation-summ
 ## Independent reference and reproducibility checks
 
 - PASS: **6,547** Python software-reference checks; **84** program/delay cases; **405** completed instructions, including intentional corrupt-trace rejection. The reference capture helper targets the current SoC.
-- PASS: regenerated ROM programs and expected vectors match their input hashes exactly.
-- PASS: all three fresh dot-product benchmark CSVs match the published datasets byte-for-byte after text newline normalization.
+- PASS: regenerated ROM programs and expected vectors match their input content hashes after newline normalization.
+- PASS: all three fresh dot-product benchmark CSVs match every row of the published datasets.
 
 Commands:
 
