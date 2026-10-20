@@ -1,0 +1,41 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed Oct 21 02:17:42 2026
+| Host         : Windows verification machine
+| Command      : report_utilization -hierarchical -file {<repository-root>/build/implementation/utilization_hierarchical.rpt}
+| Design       : boolean_board_top
+| Device       : xc7s50csga324-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------+------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|        Instance       |         Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------+------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| boolean_board_top     |                  (top) |       1791 |       1759 |      32 |    0 | 1502 |      0 |      0 |          0 |
+|   (boolean_board_top) |                  (top) |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   demo                |       soc_demo_wrapper |       1791 |       1759 |      32 |    0 | 1502 |      0 |      0 |          0 |
+|     core              |                soc_top |       1778 |       1746 |      32 |    0 | 1467 |      0 |      0 |          0 |
+|       trace_report    |      instruction_trace |         11 |         11 |       0 |    0 |   71 |      0 |      0 |          0 |
+|       data_port       |        soc_memory_port |        511 |        479 |      32 |    0 |  274 |      0 |      0 |          0 |
+|         (data_port)   |        soc_memory_port |         10 |         10 |       0 |    0 |  105 |      0 |      0 |          0 |
+|         accelerator   | dotproduct_accelerator |        358 |        358 |       0 |    0 |  169 |      0 |      0 |          0 |
+|           engine      |      dotproduct_engine |        101 |        101 |       0 |    0 |   84 |      0 |      0 |          0 |
+|           regs        |        dotproduct_regs |        267 |        267 |       0 |    0 |   85 |      0 |      0 |          0 |
+|         ram_target    |          memory_access |        145 |        113 |      32 |    0 |    0 |      0 |      0 |          0 |
+|           ram         |        data_ram_masked |        145 |        113 |      32 |    0 |    0 |      0 |      0 |          0 |
+|       exec_path       |     execution_datapath |        809 |        809 |       0 |    0 |  992 |      0 |      0 |          0 |
+|         rf            |                regfile |        809 |        809 |       0 |    0 |  992 |      0 |      0 |          0 |
+|       ir              |        instruction_reg |        416 |        416 |       0 |    0 |   59 |      0 |      0 |          0 |
++-----------------------+------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining

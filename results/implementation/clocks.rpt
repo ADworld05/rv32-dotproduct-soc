@@ -1,0 +1,57 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed Oct 21 02:17:43 2026
+| Host         : Windows verification machine
+| Command      : report_clocks -file {<repository-root>/build/implementation/clocks.rpt}
+| Design       : boolean_board_top
+| Device       : 7s50-csga324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Clock Report
+
+
+Attributes
+  P: Propagated
+  G: Generated
+  A: Auto-derived
+  R: Renamed
+  V: Virtual
+  I: Inverted
+  S: Pin phase-shifted with Latency mode
+
+Clock      Period(ns)  Waveform(ns)    Attributes  Sources
+board_clk  10.000      {0.000 5.000}   P           {mclk}
+core_clk   20.000      {0.000 10.000}  P,G         {clock_manager/CLKOUT0}
+feedback   10.000      {0.000 5.000}   P,G,A       {clock_manager/CLKFBOUT}
+
+
+====================================================
+Generated Clocks
+====================================================
+
+Generated Clock     : core_clk
+Master Source       : clock_manager/CLKIN1
+Master Clock        : board_clk
+Divide By           : 2
+Generated Sources   : {clock_manager/CLKOUT0}
+
+Generated Clock     : feedback
+Master Source       : clock_manager/CLKIN1
+Master Clock        : board_clk
+Multiply By         : 1
+Generated Sources   : {clock_manager/CLKFBOUT}
+
+
+
+====================================================
+User Uncertainty
+====================================================
+
+
+
+====================================================
+User Jitter
+====================================================

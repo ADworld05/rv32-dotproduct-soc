@@ -1,0 +1,5 @@
+Target: xc7s50csga324-1; top: boolean_board_top
+Input 100 MHz; MMCM core clock 50 MHz
+Routed worst setup slack (ns): 2.244
+Routed worst hold slack (ns): 0.142
+Hardware programming was NOT performed.

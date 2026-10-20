@@ -1,0 +1,19 @@
+mclk F14 LVCMOS33
+sw[0] V2 LVCMOS33
+led[0] G1 LVCMOS33
+led[1] G2 LVCMOS33
+led[2] F1 LVCMOS33
+led[3] F2 LVCMOS33
+led[4] E1 LVCMOS33
+led[5] E2 LVCMOS33
+led[6] E3 LVCMOS33
+led[7] E5 LVCMOS33
+led[8] E6 LVCMOS33
+led[9] C3 LVCMOS33
+led[10] B2 LVCMOS33
+led[11] A2 LVCMOS33
+led[12] B3 LVCMOS33
+led[13] A3 LVCMOS33
+led[14] B4 LVCMOS33
+led[15] A4 LVCMOS33
+PASS: all 18 physical ports and both clock periods match the Boolean-board constraints
